@@ -1,17 +1,17 @@
-.first-color { 
-	background: #222831; 
-}
-	
-.second-color { 
-	background: #393e46; 
+.first-color {
+  background: #222831;
 }
 
-.third-color { 
-	background: #d65a31; 
+.second-color {
+  background: #393e46;
 }
 
-.fourth-color { 
-	background: #eeeeee; 
+.third-color {
+  background: #d65a31;
+}
+
+.fourth-color {
+  background: #eeeeee;
 }
 
 .fifth-color {
@@ -19,7 +19,6 @@
 }
 /* font-family: 'Indie Flower', cursive;  
 font-family: 'Rock Salt', cursive;*/
-
 
 /* alt shift A (o ctrl \ si el teclado está en español) para comentar una linea */
 /* alt Z para word wrap */
@@ -38,7 +37,7 @@ font-family: 'Rock Salt', cursive;*/
 /* esto es para que el borde y el padding se cuenten dentro del alto y ancho especificado */
 html {
   -webkit-box-sizing: border-box;
-               box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -60,19 +59,15 @@ html {
   font-family: "Lucida Sans";
   /* ¡Las unidades em y rem son prácticas para crear un diseño perfectamente escalable! */
   font-style: italic;
-  color:  #222831; 
-  ;
+  color: #222831;
   text-align: center;
   text-transform: capitalize;
-
-  /* por ahora vamos a dejar un sólo background */
-  background: #eeeeee;
 }
 
 body {
   overflow-x: hidden;
   /* este display hace que se vea de costado */
-/*   display: flex; */
+  /*   display: flex; */
 }
 
 header {
@@ -84,11 +79,11 @@ header {
   /* alinear los elementos de arriba abajo */
   -webkit-box-align: center;
   -ms-flex-align: center;
-      align-items:center;
+  align-items: center;
   /* alinear los elementos de izquierda a derecha */
   -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   /* fijar la posicion */
   padding: 1rem 4rem;
   position: fixed;
@@ -98,19 +93,18 @@ header {
   background: #808080;
 }
 
-
 header nav ul {
   /* que sea horizontal */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   /* que no tenga el puntito de los elementos de la lista */
-   list-style: none;
-   -webkit-box-align: center;
-     -ms-flex-align: center;
-            align-items: center;
-   -ms-flex-pack: distribute;
-   justify-content: space-around;
+  list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   background-color: #808080;
 }
 
@@ -124,21 +118,21 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #402b26;
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   font-size: 2.5rem;
   font-weight: 1000;
   /* padding arriba y a la derecha */
-  padding: .5rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   border-radius: 5rem;
 
   background-color: #808080;
-  }
+}
 
 header nav ul li a:hover {
   background-color: #222831;
   color: #d65a31;
 }
-  
+
 header .fa-bars {
   color: #ff892f;
   font-size: 3.5rem;
@@ -147,14 +141,124 @@ header .fa-bars {
   display: none;
 }
 
-#contact{
+
+
+
+
+
+#contact {
   display: -ms-grid;
   display: grid;
   place-items: center;
   width: 100vw;
   min-height: 100vh;
-  /* background: url(https://c.files.bbci.co.uk/F173/production/_106811816_message.jpg) no-repeat; */
+  background: url(https://c.files.bbci.co.uk/F173/production/_106811816_message.jpg)
+    no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; /*esto es para que el scroll haga juego con la imagen de fondo*/
 }
+
+#contact h1 {
+  font-size: 4rem;
+  margin: 4rem 0;
+  position: relative;
+  color: #393e46;
+}
+
+#contact h1::after {
+  /*::after es para agregar contenido gral// decorativo despues del elemento seleccionado(h1): es para agregar el subrayado al titulo*/
+  content: " ";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #393e46;
+  height: 0.4rem;
+  width: 80%;
+}
+
+#contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 90%;
+}
+
+/* #contact .wrapper .info {
+  width: 20%;
+ 
+}
+
+#contact .wrapper .info .item {
+  margin: 4rem 0;
+ 
+}
+
+#contact .wrapper .info .item h2 {
+	font-size: 3rem;
+	color: #393e46;
+	margin: 1rem 0;
+}
+
+#contact .wrapper .info .item h2 i {
+	color: gold;
+	padding-left: 0 .5rem;
+}  */
+
+#contact .wrapper form {
+  width: 50vw; /*viewport width Se utiliza para establecer el ancho de un elemento en relación con el ancho del área visible de una página web.*/
+}
+
+#contact .wrapper form .inputBox h3 {
+  font-size: 2rem;
+  color: #393e46;
+}
+
+#contact .wrapper form .inputBox input,
+#contact .wrapper form .inputBox textarea {
+  outline: none;
+  border: 0.2rem solid #eeeeee;
+  background: none;
+  padding: 0 1rem;
+  margin: 1rem 0;
+   color: #222831; /*de la letra cuando rellene el campo*/
+  font-size: 1.7rem;
+  font-weight: bold;
+  height: 4rem;
+  width: 100%;
+  text-transform: none;
+}
+
+#contact .wrapper form .inputBox textarea {
+  resize: none;
+  padding: 1rem;
+  height: 20rem;
+  text-transform: none;
+}
+
+#contact .wrapper form input[type="submit"]{
+  outline: none;
+  border: none;
+  background: #222831;
+  color: #d65a31;
+  border-radius: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+	margin: 2rem 0;
+	height: 4rem;
+	width: 14rem;
+}
+
+#contact .wrapper form input[type="submit"]:hover {
+  background: #eeeeee;
+  }
+
+ 
