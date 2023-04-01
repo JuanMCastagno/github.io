@@ -33,6 +33,7 @@ font-family: 'Rock Salt', cursive;*/
 /*  ctrl L para seleccionar la linea actual*/
 /* ctrl K ctrl S para ver los todos shortcuts */
 /* alt shift F para identar */
+/* Cuando empiezo a escribir codigo CSS uso Autoprefixer para que me escriba el codigo para el resto de los navegadores F1 */
 
 /* esto es para que el borde y el padding se cuenten dentro del alto y ancho especificado */
 html {
@@ -44,7 +45,8 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 * {
@@ -53,6 +55,8 @@ html {
   padding: 0;
 
   /* todo a la misma velocidad de inicio y final del efecto*/
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 
   /* todo con una letra standar para cualquier navegador con un estilo cursiva  */
@@ -130,7 +134,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   background-color: #222831;
-  color: #d65a31;
+  color: #ff892f;
 }
 
 header .fa-bars {
@@ -141,7 +145,67 @@ header .fa-bars {
   display: none;
 }
 
+#home {
+  min-height: 100vw;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 6rem;
+  background: #eeeeee;
+}
 
+#home .image img {
+  width: 50vw;
+}
+
+#home .content  h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  color: #ff892f;
+}
+
+#home .content h1 span {
+  color: #ff892f;
+  font-family:  'Rock Salt', cursive;
+  font-weight: bold;
+}
+
+#home .content button{
+  outline: none;
+  border: none;
+  background: #393e46;
+  color: #ff892f;
+  border-radius: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+	margin: 2rem 0;
+	height: 4rem;
+	width: 14rem;
+}
+
+#home .content  button:hover {
+  background: #ffffff; 
+  color: #393e46;
+}
+
+#home .content .icons {
+  margin: 2rem 0;
+}
+
+#home .content .icons a {
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #808080;
+}
+
+#home .content .icons a:hover {
+  color: #222831;
+}
 
 
 
@@ -173,7 +237,8 @@ header .fa-bars {
   bottom: -1rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   background: #393e46;
   height: 0.4rem;
   width: 80%;
@@ -247,7 +312,7 @@ header .fa-bars {
   outline: none;
   border: none;
   background: #222831;
-  color: #d65a31;
+  color: #ff892f;
   border-radius: 5rem;
   font-size: 2rem;
   font-weight: bold;
