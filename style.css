@@ -1,3 +1,124 @@
 body {
-  background-color: black;
+  background-color: #2d4059;
+ 
+}
+.first-color { 
+	background: #222831; 
+}
+	
+.second-color { 
+	background: #2d4059; 
+}
+
+.third-color { 
+	background: #ff5722; 
+}
+
+.fourth-color { 
+	background: #eeeeee; 
+}
+
+/* NAVBAR */
+.navbar{
+  background-color: transparent;
+}
+
+.navbar-brand{
+  color: #eeeeee;
+}
+
+.my-header .nav-item .nav-link {
+  color: #eeeeee;
+}
+
+.my-header .nav-item .nav-link:hover {
+  color:#222831;
+  background-color: #eeeeee;
+}
+
+/* INICIO */
+
+.inicio {
+  min-height: 50vw;
+  width: 100vw;
+  background: #2d4059;  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 6rem;
+}
+
+.inicio .image img{
+  width: 50vw;
+}
+
+.inicio h1 {
+  color: #eeeeee; 
+}
+
+.inicio p {
+  color: #eeeeee; 
+}
+
+a {
+  text-decoration: none;
+}
+
+a .bi-facebook {
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+a .bi-facebook:hover {
+transition: 1s;
+  text-decoration: none;
+ border-radius: 50%;
+ fill: #ff5722; 
+ background-color: #eeeeee;
+ }
+
+ a .bi-instagram {
+  text-decoration: none;
+  border-radius: 25%;
+}
+
+a .bi-instagram:hover {
+transition: 1s;
+  text-decoration: none;
+ border-radius: 25%;
+ fill: #ff5722; 
+ background-color: #eeeeee;
+ }
+
+ a .bi-twitter-x {
+  text-decoration: none;
+  border-radius: 25%;
+}
+
+a .bi-twitter-x:hover {
+transition: 1s;
+  text-decoration: none;
+ border-radius: 25%;
+ fill: #ff5722; 
+ }
+
+ a .bi-linkedin {
+  text-decoration: none;
+  border-radius: 25%;
+}
+
+a .bi-linkedin:hover {
+transition: 1s;
+  text-decoration: none;
+ border-radius: 25%;
+ fill: #ff5722; 
+ background-color: #eeeeee;
+ }
+
+ /* CONTACTO */
+
+ #contacto {
+  min-height: 50vw;
+  width: 100vw;
+  background: #eeeeee;
 }
