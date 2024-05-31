@@ -1,5 +1,5 @@
 body {
-  background-color: #2d4059;
+  background-color: transparent;
  
 }
 .first-color { 
@@ -28,7 +28,7 @@ body {
 }
 
 .my-header .nav-item .nav-link {
-  color: #eeeeee;
+  color: #ff5722;
 }
 
 .my-header .nav-item .nav-link:hover {
@@ -117,8 +117,15 @@ transition: 1s;
 
  /* CONTACTO */
 
- #contacto {
+ #contact {
   min-height: 50vw;
   width: 100vw;
-  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 6rem;
+  background: url(/img/fondo_contacto.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /*esto es para que el scroll haga juego con la imagen de fondo*/
 }
